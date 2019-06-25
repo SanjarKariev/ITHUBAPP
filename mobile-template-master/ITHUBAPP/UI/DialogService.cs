@@ -85,11 +85,11 @@ namespace ITHUBAPP.UI {
 		}
 
 		void DialogHideLoadingCallback(MessageBus bus) {
-			Device.BeginInvokeOnMainThread(() => UserDialogs.Instance.HideLoading());
+		//	Device.BeginInvokeOnMainThread(() => UserDialogs.Instance.HideLoading());
 		}
 
 		void DialogShowLoadingCallback(MessageBus bus, string message) {
-			Device.BeginInvokeOnMainThread(() => UserDialogs.Instance.ShowLoading(message, MaskType.Black));
+		//	Device.BeginInvokeOnMainThread(() => UserDialogs.Instance.ShowLoading(message, MaskType.Black));
 		}
 
 		void DialogQuestionCallback(MessageBus bus, DialogQuestionInfo questionInfo) {

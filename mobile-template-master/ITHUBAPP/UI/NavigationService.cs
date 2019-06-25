@@ -121,7 +121,7 @@ namespace ITHUBAPP.UI {
 					await Push(navigationPushInfo);
 				}
 				catch (Exception e) {
-					//LogService.WriteError(this, nameof(NavigationPushCallback), e);
+					System.Diagnostics.Debug.WriteLine(e);
 				}
 
 				_isBusy = false;

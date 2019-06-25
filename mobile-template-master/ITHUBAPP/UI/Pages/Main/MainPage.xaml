@@ -9,13 +9,15 @@
 	    <controls:StateContainer State="{Binding State}">
 
 		    <controls:StateCondition State="Loading">
-			    <ActivityIndicator IsRunning="True" WidthRequest="40"
+				<ActivityIndicator IsRunning="True"
+								   WidthRequest="40"
+								   HeightRequest="40"
 			                       HorizontalOptions="Center" VerticalOptions="Center"/>
 		    </controls:StateCondition>
 
 		    <controls:StateCondition State="Normal">
 			    <StackLayout>
-				    <Label Text="Welcome to Binwell University!"
+				    <Label Text="Welcome to ITHUB COLLEGE!"
 				           VerticalOptions="CenterAndExpand" 
 				           HorizontalOptions="CenterAndExpand" />
 				    <Label Text="{Binding SampleObject.Description}" 
@@ -24,7 +26,7 @@
 				    <Image HorizontalOptions="Center" VerticalOptions="Center"
 				           WidthRequest="300" HeightRequest="300"
 				           Source="{Binding SampleObject.ImageUrl}"/>
-					 <Button Text="Show Alert"
+					 <Button Text="NEXT"
 							 Command="{Binding SampleCommand}"
 					           VerticalOptions="CenterAndExpand" 
 					           HorizontalOptions="CenterAndExpand"/>

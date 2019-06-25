@@ -25,9 +25,9 @@ namespace ITHUBAPP.BL.ViewModels.Main
 				State = PageState.Error;
 		}
 
-	    async void OnSampleCommand() {
-		    await ShowAlert("New alert", "Just a message", "OK");
-	    }
+		async void OnSampleCommand() {
+			NavigateTo("Menu");
+		}
     }
 }
 
